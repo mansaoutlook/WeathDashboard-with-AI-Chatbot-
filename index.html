@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App with Chatbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="weather-card mb-4">
+                    <h1 class="text-center mb-4">Weather Dashboard</h1>
+                    <div class="search-bar mb-3">
+                        <div class="input-group">
+                            <input type="text" id="searchInput" class="form-control" placeholder="Search location...">
+                            <button class="btn btn-primary" onclick="searchWeather()">Search</button>
+                        </div>
+                    </div>
+                    <div class="weather-info text-center">
+                        <div class="weather-emoji">⛅</div>
+                        <div class="weather-details">
+                            <p id="location" class="mb-2">Loading...</p>
+                            <p id="temperature" class="mb-2">Temperature: --°C</p>
+                            <p id="description" class="mb-2">Condition: --</p>
+                            <p id="humidity" class="mb-2">Humidity: --%</p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h5>Recent Searches</h5>
+                        <div class="recent-searches" id="recentSearches"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="chat-btn">💬</button>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3 class="mb-0">Weather Assistant</h3>
+        </div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input p-2">
+            <div class="input-group">
+                <input type="text" id="messageInput" class="form-control" placeholder="Type a message...">
+                <button onclick="sendMessage()" class="btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+       
+</body>
+</html>
+

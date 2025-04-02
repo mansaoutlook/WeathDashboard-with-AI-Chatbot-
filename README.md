@@ -1,4 +1,4 @@
-# WeathDashboard with AI Weather Assistant
+# Weather Dashboard with AI Weather Assistant
 
 # Overview:
 
